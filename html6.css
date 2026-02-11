@@ -1,0 +1,61 @@
+header{
+    position:fixed;
+    background-color: red;
+    left:15%;
+    top:0;
+    width:85%;
+    text-align: center;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    margin-top: 120px;
+    margin-left: 20%;
+}
+
+#jumpMenu{
+    position:fixed;
+    bottom:0;
+    top:0;
+    left:0;
+    background-color:darkgoldenrod ;
+    width: 15%;
+    padding: 50px;
+}
+
+#container{
+    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+  
+
+}
+
+#container article{
+    width:300px;
+}
+
+
+#thanks{
+    position:fixed;
+    right:0;
+    bottom:0;
+    background-color:lightskyblue;
+    border:2px solid black;
+}
+
+footer{
+margin-left: 15%;
+}
+
+
+article > p:first-of-type::first-letter{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
