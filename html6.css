@@ -58,4 +58,59 @@ margin-left: 15%;
 article > p:first-of-type::first-letter{
     font-size: 36px;
     font-family: 'Times New Roman', Times, serif;
+
 }
+
+article a[href*="google.com"]::after{
+    content:url("linkicon.png")
+
+}
+
+article a{
+    color: blue;
+    text-decoration: underline;
+    font-size: inherit;
+}
+
+article{
+    color: lightgrey;
+    transition: color 2s ease, max-height 2s ease;
+    overflow:hidden;
+    max-height: 220px;
+}
+
+article:hover{
+    color:black;
+    max-height: 1000px;
+}
+
+article p{
+    color:inherit;
+}
+
+#menuItems a:hover{
+    background-color:orange ;
+
+}
+
+
+
+#jumpMenu{
+    display: block;
+}
+#meunItems a#recentArticles:hover + #jumpMenu, #jumpMenu:hover{
+    display:block;
+}
+
+#jumpMenu li a{
+    display:block;
+    color:gold;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+#jumpMenu li a:hover{
+    background-color: chartreuse;
+    color:blue;
+}
+
